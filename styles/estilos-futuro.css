@@ -171,3 +171,10 @@ textarea {
     background-color: #5aacca;
 }
 
+@media (max-width:800px) {
+    .absolute {
+        position: static;
+        margin-top: 1rem;
+    }
+}
+
