@@ -1,0 +1,147 @@
+/*
+Colores:
+black olive: #2E291F
+bone: #D5CEBA
+battleship gray: #887F6C
+
+*/
+
+@import url('https://fonts.googleapis.com/css2?family=Beau+Rivage&family=Noticia+Text:ital@0;1&family=Special+Elite&display=swap');
+
+html {
+    font-size: 16px;
+}
+
+body {
+    background-image: url("../images/desktop-wallpaper-old-newspaper-backgrounds-luxury-old-paper-cave-inspiration-old.jpg");
+    background-size: cover;
+    background-repeat: no-repeat;
+    height: 100%;
+    font-family: 'Noticia Text', serif;
+    font-size: 1.5rem;
+    color: #2E291F;
+}
+
+h1 {
+    font-family: 'Beau Rivage', cursive;
+    font-size: 5rem;
+    text-align: center;
+    margin-bottom: 1rem;
+}
+
+form, .newspaper {
+    width: 80%;
+}
+
+.newspaper {
+    border-bottom: solid #2E291F 1.5rem;
+    align-self: center;
+}
+
+main, form, fieldset{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+fieldset {
+    background-color: #d5ceba82;
+    box-sizing: border-box;
+    margin: 0.5rem 0;
+    padding: 0 0 1rem 0;
+    width: 100%;
+}
+
+label {
+    padding: 0.5rem 0;
+    font-family: 'Noticia Text', serif;
+}
+
+fieldset, input, textarea, select {
+    border: none;
+    outline: none;
+}
+
+input, textarea, select {
+    background-color: #887f6ca2;
+    box-sizing: border-box;
+    width: 60%;
+    padding: 0.5rem;
+    font-size: 1.2rem;
+    font-family: 'Special Elite', serif;
+}
+
+input:focus, textarea:focus, select:focus {
+    outline: none;
+} 
+
+textarea {
+    resize: vertical;
+    min-height: 8rem;
+}
+
+::placeholder {
+    color: #2E291F;
+}
+
+.divider {
+    border-bottom: #605746 solid 0.5rem;
+    margin-top: 1rem;
+    width: 100%;
+}
+
+#sede div {
+    display: flex;
+    margin: 0.5rem 0.5rem;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+#send {
+    width: 60%;
+}
+
+#send input, .radio input, .checkbox input {
+    width: auto;
+}
+
+#afiliacion {
+    display: flex;
+    margin-top: 1rem;
+    justify-content: center;
+    width: 100%;
+}
+
+#afiliacion button, .absolute button, .absolute select {
+    border: solid 2px #887F6C;
+    background-color: #D5CEBA;
+    color: #887F6C;
+    cursor: pointer;
+    padding: 0.5rem;
+}
+
+#afiliacion button {
+    margin: 0 1rem;
+    font-size: 1.5rem;
+}
+
+.absolute {
+    position: static;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    width: 60%;
+}
+
+.absolute button, .absolute select {
+    font-family: 'Noticia Text', serif;
+    font-size: 1rem;
+    margin: 0.5rem 0.5rem;
+    text-align: center;
+    width: 12rem;
+}
+
+.absolute button.stored {
+    border-style: inset;
+    border-width: 4px;
+}

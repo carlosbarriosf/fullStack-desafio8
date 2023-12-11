@@ -1,0 +1,173 @@
+/*
+Colores:
+
+dark-orange #f67d04a6
+bright-orange #f37103
+dark-blue #5aaccabb
+light-blue #36fefe
+
+*/
+@import url('https://fonts.googleapis.com/css2?family=PT+Sans+Narrow:wght@400;700&display=swap');
+
+html {
+    font-size: 16px;
+}
+
+body {
+    color: white;
+    background: url("../images/photo-1634834300387-8015d9fb7550.avif") no-repeat;
+    background-size: cover;
+    background-position-x: center;
+    height: 100%;
+    font-family: 'PT Sans Narrow', sans-serif;
+    font-size: 1.5rem;
+    text-shadow: 2px 2px black;
+}
+
+h1 {
+    font-size: 4rem;
+    font-weight: 700;
+}
+
+main {
+    align-items: center;
+}
+
+main, form, fieldset{
+    display: flex;
+    flex-direction: column;
+}
+
+
+fieldset {
+    align-items: center;
+    margin: 1rem 0 1rem 0;
+    transition: all 0.6s;
+    border: none;
+}
+
+
+fieldset:focus-within, fieldset:hover {
+    box-shadow: 10px 10px 10px rgba(23, 22, 22, 0.931);
+        background-color: #21222453;
+
+}
+
+
+#afiliacion button:hover, fieldset:focus-within, fieldset:hover {
+    transform: scale(1.1, 1.1);
+}
+
+legend {
+    border: solid 1px #0d74ab44;
+}
+
+fieldset, legend, #send, #afiliacion button, .absolute button {
+    border-radius: 8px;
+}
+
+legend {
+    text-align: right;
+    background-color: transparent;
+    padding: 4px;
+    background-color: #f67d04a6;
+}
+
+select {
+    box-sizing: content-box;
+    padding: 1px 2px;
+}
+
+form,
+fieldset input, textarea, select {
+    width: 60%;
+    margin: 0.5rem 0 0.5rem 0;
+}
+
+input, textarea, select {
+    border: 1px solid white;
+    border-radius: 4px;
+    background-color: #f67d04a6;
+    color: white;
+    padding: 4px 0;
+}
+
+textarea {
+    resize: vertical;
+    min-height: 8rem;
+}
+
+::placeholder {
+    color: white;
+}
+
+#sede {
+    flex-wrap: wrap;
+}
+
+#sede div label {
+    display: block;
+    width: 100%;
+    text-align: center;
+}
+
+#sede div {
+    margin: 0 1rem 0 1rem;
+}
+
+#afiliacion {
+    display: flex;
+    margin: 2rem 0;
+    justify-content: center;
+}
+
+.radio input, .checkbox input {
+    width: auto;
+}
+
+#afiliacion button, .absolute button, .absolute select, .absolute select option{
+    color: white;
+    border: solid white 1px;
+    background-color: #5aaccabb;
+    margin: 0 1rem 0 1rem;
+    padding: 0.5rem;
+    transition: all 0.6s;
+}
+
+#afiliacion button:hover {
+    cursor: pointer;
+    background-color: #36fefe;
+    color: #f37103;
+    border: solid #f37103 4px;
+    font-size: 1.2rem;
+}
+
+.d-flex {
+    display: flex;
+}
+
+.absolute {
+    display: flex;
+    flex-direction: column;
+    position: absolute;
+    left: 4rem;
+}
+
+.absolute select, .absolute button {
+    margin: 0.5rem 0;
+    border-radius: 8px;
+    text-align: center;
+    width: auto;
+}
+
+.absolute button:hover {
+    transform: translateX(10px);
+    cursor: pointer;
+}
+
+.absolute button.stored {
+    border-style: inset;
+    border-width: 4px;
+    background-color: #5aacca;
+}
+

@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Afiliación</title>
+    <link id="stylesheet" rel="stylesheet" href="styles/estilos.css">
+    <!-- <link rel="stylesheet" href="styles/estilos-futuro.css"> -->
+    <!-- <link rel="stylesheet" href="styles/estilos-retro.css"> -->
+</head>
+<body>
+    <main>
+        <div class="absolute">
+            <button id="cycle">Cambiar Estilo</button>
+            <button id="random"><img src="images/klipartz.com.png" alt=""></button>
+            <select name="" id="styleSelector">
+                <option value="default">Default</option>
+                <option value="futuro">Futurista</option>
+                <option value="retro">Retro</option>
+                <option value="clear">Sin Estilos</option>
+            </select>
+            <button id="storage">Recordar</button>
+        </div>
+        <div id="title">
+            <h1>Vení al Gym! 💪🏼</h1>
+        </div>
+        <div class="newspaper"></div>
+        <form action="">
+            <fieldset id="datosPersonales">
+                <legend id="personal">🙋🏼‍♂️ D<span>ATOS</span> P<span>ERSONALES</span> 👀</legend>
+                <label for="nombre">Nombre:*</label>
+                <input type="text" name="nombre" id="nombre" required>
+                <label for="apellido">Apellido:*</label>
+                <input type="text" name="apellido" id="apellido" required>
+                <label for="documento">Documento:*</label>
+                <input type="text" name="documento" id="documento" required>
+                <label for="nacionalidad">Nacionalidad:*</label>
+                <select name="nacionalidad" id="nacionalidad" required>
+                        <option value="" disabled selected>- Seleccionar -</option>
+                        <option value="argentina">Argentina</option>
+                        <option value="brasileña">Brasileña</option>
+                        <option value="uruguaya">Uruguaya</option>
+                        <option value="otra">Otra</option>
+                </select>
+                <label for="info">Contanos un poco de vos...</label>
+                <textarea name="info" id="info" cols="30" rows="10"></textarea>
+                <label for="sexo">Sexo:*</label>
+                <div class="radio">
+                        <input type="radio" name="sexo" id="fem" value="Femenino" required><span>Femenino</span>
+                        <input type="radio" name="sexo" id="masc" value="Masculino" required><span>Masculino</span>
+                        <input type="radio" name="sexo" id="otro" value="Otro" required><span>Otro</span>
+                </div>
+            </fieldset>
+            <div class="divider"></div>
+            <fieldset id="datosContacto">
+                    <legend id="contacto">📱 D<span>ATOS DE</span> C<span>ONTACTO</span> ✉️</legend>
+                    <label for="telefono">Teléfono:</label>
+                    <input type="text" name="telefono" id="telefono" placeholder="Código de área y número">
+                    <label for="correo">Dirección de correo electrónico:*</label>
+                    <input type="email" name="correo" id="correo" placeholder="Ej: mail@gmail.com" required>
+            </fieldset>
+            <div class="divider"></div>
+            <fieldset id="actividades">
+                    <legend id="actividadTitle">🚵🏻‍♀️ A<span>CTIVIDADES</span> 🤸🏻‍♂️</legend>        
+                <p>Por favor, indicá cuáles son las actividades que te interesan.</p>
+                <div id="sede" class="d-flex">
+                    <div>
+                        <label for="">Sede Palermo:</label>
+                        <div class="checkbox">
+                            <div>
+                                <input type="checkbox" name="" id=""><span>Básquet</span>
+                            </div>
+                            <div>
+                                <input type="checkbox" name="" id=""><span>Boxeo</span>
+                            </div>
+                            <div>
+                                <input type="checkbox" name="" id=""><span>Fútbol</span>
+                            </div>
+                            <div>
+                                <input type="checkbox" name="" id=""><span>Tenis</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div>
+                        <label for="">Sede rosario:</label>
+                        <div class="checkbox">
+                            <div>
+                                <input type="checkbox" name="" id=""><span>Básquet</span>
+                            </div>
+                            <div>
+                                <input type="checkbox" name="" id=""><span>Fútbol</span>
+                            </div>
+                            <div>
+                                <input type="checkbox" name="" id=""><span>Rugby</span>
+                            </div>
+                            <div>
+                                <input type="checkbox" name="" id=""><span>Voley</span>
+                            </div>
+                        </div>    
+                    </div>
+                </div>
+            </fieldset>
+            <div id="send">           
+                    <div>
+                        <input type="checkbox" name="" id="" required>
+                        <label for="">Acepto las condiciones*</label>
+                    </div>
+                    <div>
+                        <input type="checkbox" name="" id="">
+                        <label for="">Deseo recibir novedades</label>
+                    </div>           
+                <div class="campo">
+                    *: campo obligatorio
+                </div>
+                <div id="afiliacion">                
+                        <button type="submit">Iniciar afiliación</button>
+                        <button type="button" id="reset">Restablecer</button>               
+                </div>
+            </div>
+        </form>
+    </main>
+    <script src="index.js"></script>
+</body>
+</html>
